@@ -16,11 +16,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <% Banda.forEach(Banda => { %>
+                        <% Banda.forEach(bandaItem => { %> 
                         <tr>
                             <td><img src="imgs/order.png" width="30px"></td>
-                            <td><%= Banda.Nome %></td>
-                            <td><%= Banda.Idade %></td>
+                            <td><%= bandaItem.nome %></td>
+                            <td><%= bandaItem.idade %></td>
                         </tr>
                         <% }) %>
                     </tbody>

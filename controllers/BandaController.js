@@ -3,7 +3,7 @@ const router = express.Router()
 
 // ROTA Banda
 router.get("/Banda", function (req,res){
-    const Banda = [
+    const bandaLista = [ // Variável local tem nome diferente do objeto enviado
         {nome: "Chorão", idade: "55"},
         {nome: "Champignon", idade: "47"},
         {nome: "Marcão", idade: "55"},
@@ -13,7 +13,7 @@ router.get("/Banda", function (req,res){
         {nome: "Thiago Castanho", idade: "50"},
     ]
     res.render("Banda", {
-        Banda: Banda
+        Banda: bandaLista // A chave de envio é 'Banda'
     })
 })
 
